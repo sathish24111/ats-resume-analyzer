@@ -1,0 +1,47 @@
+# Build targets and packaging
+**/target/
+**/*.jar
+**/*.war
+**/*.ear
+
+# Dependency directories
+**/node_modules/
+jspm_packages/
+web_modules/
+
+# IDEs and editors
+.idea/
+*.iml
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+.factorypath
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Local environments and logs
+.env
+.env.local
+.env.*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Other tools
+.mvn/
+.gradle/
+build/
+bin/
