@@ -338,8 +338,13 @@ function App() {
                     </div>
                   )}
 
-                  <button type="submit" className="btn btn-primary btn-full" style={{ marginTop: '1.5rem' }}>
-                    {isLogin ? (
+                  <button type="submit" className="btn btn-primary btn-full" style={{ marginTop: '1.5rem' }} disabled={globalLoading}>
+                    {globalLoading ? (
+                      <>
+                        <div className="spinner" style={{ width: '18px', height: '18px', borderWidth: '2px', display: 'inline-block', verticalAlign: 'middle', marginRight: '0.5rem' }}></div>
+                        Connecting...
+                      </>
+                    ) : isLogin ? (
                       <>
                         <i className="fa-solid fa-right-to-bracket"></i> Login to Portal
                       </>
